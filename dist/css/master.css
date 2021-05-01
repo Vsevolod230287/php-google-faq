@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  padding: 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 90px;
+  border-bottom: 1px solid blue;
+}
+header .header-top {
+  line-height: 60px;
+  vertical-align: middle;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header .header-top .logo-privacy {
+  padding-left: 30px;
+  display: flex;
+  align-content: center;
+}
+header .header-top .logo-privacy div {
+  display: flex;
+  padding-top: 3px;
+}
+header .header-top .logo-privacy div img {
+  padding-right: 5px;
+}
+header .header-top .logo-privacy div {
+  font-size: 23px;
+}
+header .header-top div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-top div img {
+  padding-right: 15px;
+  height: 25px;
+}
+header .header-top div i {
+  font-size: 26px;
+}
+header .header-bottom {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+header .header-bottom ul {
+  padding-left: 30px;
+  list-style: none;
+  width: 70%;
+  display: flex;
+}
+header .header-bottom ul li {
+  font-size: 20px;
+  padding-bottom: 5px;
+  padding-right: 80px;
+}
