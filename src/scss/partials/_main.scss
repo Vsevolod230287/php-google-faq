@@ -1,0 +1,41 @@
+main {
+  padding-top: 90px;
+
+  .container {
+    margin: 0 auto;
+    width: 80%;
+    h1{
+      padding-bottom: 50px;
+      font-size: 19px;
+    }
+
+    p {
+      padding-bottom: 30px;
+      font-size: 16px;
+
+    }
+
+    ol {
+      margin-left: 30px;
+    }
+
+    ul {
+      list-style: none;
+      margin-left: 0;
+
+      li::marker {
+        padding-right: 30px;
+      }
+
+      li {
+        padding-left: 1em;
+        text-indent: -1em;
+      }
+
+      li:before {
+        content: 'a';
+        padding-right: 5px;
+      }
+    }
+  }
+}
