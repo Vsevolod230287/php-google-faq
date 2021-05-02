@@ -1,4 +1,39 @@
 footer {
+  padding: 0 50px;
   height: 70px;
   background-color: #F5F5F5;
+
+  .container {
+    height: 100%;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+
+    select {
+      border-radius: 5px;
+      height: 30px;
+      width: 200px;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      li {
+        justify-content: flex-start;
+        display: flex;
+        padding-right: 10px;
+        align-items: center;
+
+        i {
+          padding-left: 10px;
+          font-size: 5px;
+        }
+      }
+    }
+  }
 }

@@ -95,9 +95,9 @@
        'p2' =>  'La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto
                  delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle
                  due società seguenti:',
-         'p3' => 'Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell\'Unione europea,
+         'p3' => 'a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell\'Unione europea,
                   oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.',
-         'p4' => 'Google LLC, con sede negli Stati Uniti, per il resto del mondo.',
+         'p4' => 'b.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Google LLC, con sede negli Stati Uniti, per il resto del mondo.',
          'p5' => 'La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.',
         'p6' => 'Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società
                 consociata che li offre o dal paese a cui è associato il tuo account.',
@@ -143,7 +143,7 @@
      <div class="container">
 
 <?php foreach ($faqs as $faq => $paragraphs) {
-                    if($faq == 'faq3' ) {
+                    if($faq == 'faq3') {
                       foreach ($paragraphs as $p => $text) { ?>
                          <div class="faq">
                            <?php if($p == 'p0') {
@@ -151,7 +151,7 @@
                            } else if ($p == 'p2' || $p == 'p5'){
                            echo '<ol><li><p>' . $text . '</p></li></ol>';
                          }else if($p == 'p3' || $p == 'p4'){
-                         echo '<ol><li><ul><li><p>' . $text . '</p></li></ul></li></ol>';
+                         echo '<ul><li><p>' . $text . '</p></li></ul>';
                        }  else {
                                  echo '<p>' . $text . '</p>';
                               }
@@ -174,6 +174,18 @@
   </main>
 
 <footer>
+  <div class="container">
+
+  <ul>
+    <li>Google <i class="fas fa-circle"></i></li>
+    <li>Tutto su Google <i class="fas fa-circle"></i></li>
+    <li>Privacy <i class="fas fa-circle"></i></li>
+    <li>Termini <i class="fas fa-circle"></i></li>
+  </ul>
+  <select class="" name="">
+    <option value="">Italiano</option>
+  </select>
+</div>
 
 </footer>
 </body>
